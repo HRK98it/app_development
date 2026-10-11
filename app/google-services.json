@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "706140406870",
+    "project_id": "campus-companion-4c419",
+    "storage_bucket": "campus-companion-4c419.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706140406870:android:ea4b18cef88d03289267f7",
+        "android_client_info": {
+          "package_name": "com.example.campuscompanion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCko2cfB_c7ecP_dl4yU5ZEX6Ltc2ckQtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

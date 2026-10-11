@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#2DD4C0</color>
+    <color name="background">#12131C</color>
+    <color name="border">#2E3142</color>
+    <color name="danger">#FF6B7F</color>
+    <color name="primary">#7B7FFF</color>
+    <color name="primary_dark">#5B5FEF</color>
+    <color name="surface">#1C1E2A</color>
+    <color name="text_primary">#F1F2FA</color>
+    <color name="text_secondary">#A6A9BF</color>
+    <color name="white">#FFFFFF</color>
+    <style name="Theme.CampusCompanion" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:fontFamily">sans</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+
+        <item name="materialButtonStyle">@style/Widget.CampusCompanion.Button</item>
+
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+
+    </style>
+</resources>

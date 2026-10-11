@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Weather" android:textSize="28sp" android:textStyle="bold" android:textColor="@color/text_primary" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Live conditions powered by OpenWeatherMap" android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="4dp" android:layout_marginBottom="18dp" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="22dp" app:strokeColor="@color/border" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="City name" app:boxBackgroundMode="outline" app:boxCornerRadiusTopStart="14dp" app:boxCornerRadiusTopEnd="14dp" app:boxCornerRadiusBottomStart="14dp" app:boxCornerRadiusBottomEnd="14dp">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCity" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton android:id="@+id/btnGetWeather" android:layout_width="match_parent" android:layout_height="52dp" android:text="Check Weather" android:textStyle="bold" android:layout_marginTop="14dp" app:cornerRadius="15dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardCornerRadius="22dp" app:strokeColor="@color/border" app:strokeWidth="1dp">
+            <TextView android:id="@+id/tvWeatherResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter a city to see the latest weather." android:textSize="18sp" android:textColor="@color/text_primary" android:padding="22dp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

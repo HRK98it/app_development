@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Campus Companion"
+        android:theme="@style/Theme.CampusCompanion"
+        android:usesCleartextTraffic="true">
+
+        <!-- Exp 2 UI + Exp 5 Firebase Auth -->
+        <activity android:name=".LoginActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SignupActivity" />
+
+        <!-- Exp 8: Fragment host (Home / Records / Weather / Map / Profile) -->
+        <activity android:name=".MainActivity" />
+
+        <!-- Exp 3: Add / Edit student record -->
+        <activity android:name=".AddEditStudentActivity" />
+
+        <!-- Exp 9: background music player -->
+        <service android:name=".MusicService" android:foregroundServiceType="mediaPlayback" />
+
+        <receiver android:name=".TaskReminderReceiver" android:exported="false" />
+
+        <!-- Exp 7: FileProvider for camera-captured images -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.campuscompanion.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">706140406870</string>
+    <string name="google_api_key" translatable="false">AIzaSyCko2cfB_c7ecP_dl4yU5ZEX6Ltc2ckQtc</string>
+    <string name="google_app_id" translatable="false">1:706140406870:android:ea4b18cef88d03289267f7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCko2cfB_c7ecP_dl4yU5ZEX6Ltc2ckQtc</string>
+    <string name="google_storage_bucket" translatable="false">campus-companion-4c419.firebasestorage.app</string>
+    <string name="project_id" translatable="false">campus-companion-4c419</string>
+</resources>

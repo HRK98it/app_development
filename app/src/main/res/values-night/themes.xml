@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CampusCompanion"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="android:fontFamily">sans</item>
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/accent</item>
+
+        <item name="materialButtonStyle">@style/Widget.CampusCompanion.Button</item>
+
+        <item name="android:windowBackground">@color/background</item>
+
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+
+    </style>
+
+</resources>

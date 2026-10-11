@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Applied to every plain <Button> in the app (MaterialComponents theme
+         auto-inflates <Button> as MaterialButton), giving a small press/release
+         bounce on click in addition to the default ripple. -->
+    <style name="Widget.CampusCompanion.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:stateListAnimator">@animator/button_click_bounce</item>
+    </style>
+
+</resources>

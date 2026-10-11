@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/background">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Academics" android:textSize="28sp" android:textStyle="bold" android:textColor="@color/text_primary"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Track attendance, assignments, timetable and student records." android:textSize="14sp" android:textColor="@color/text_secondary" android:layout_marginTop="4dp"/>
+<Button android:id="@+id/btnAddAttendance" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="16dp" android:text="+ Add Subject Attendance"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Attendance" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginTop="18dp"/>
+<LinearLayout android:id="@+id/llAttendanceList" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp"/>
+<Button android:id="@+id/btnAddTask" android:layout_width="match_parent" android:layout_height="52dp" android:text="+ Add Assignment / Task" android:layout_marginTop="16dp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="My Tasks" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginTop="18dp"/>
+<LinearLayout android:id="@+id/llTaskList" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp"/>
+<Button android:id="@+id/btnAddClass" android:layout_width="match_parent" android:layout_height="52dp" android:text="+ Add Timetable Class" android:layout_marginTop="16dp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Timetable" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginTop="18dp"/>
+<LinearLayout android:id="@+id/llTimetableList" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp"/>
+<Button android:id="@+id/btnAddStudent" android:layout_width="match_parent" android:layout_height="52dp" android:text="+ Add Student Record" android:layout_marginTop="8dp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Student records" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginTop="24dp"/>
+<androidx.recyclerview.widget.RecyclerView android:id="@+id/rvStudents" android:layout_width="match_parent" android:layout_height="360dp" android:clipToPadding="false" android:nestedScrollingEnabled="false"/>
+</LinearLayout></ScrollView>
